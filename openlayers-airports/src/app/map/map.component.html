@@ -1,0 +1,20 @@
+<div id="map" class="map"></div>
+
+<!-- Add markers on button click -->
+<!-- set padding on top and between buttons -->
+<div class="map-buttons">
+    <button (click)="showAirports()">Show Airports</button>
+    <button (click)="clearAirports()">Clear Map</button>    
+
+    <!-- show all airports -->
+    <button (click)="showAllAirports()">Show All Airports</button>
+
+    <!-- deopdown with iata_codes -->
+    <select (change)="showAirport($event)">
+        <option value="">Select Airport</option>
+        <option *ngFor="let airport of airports" [value]="airport.iata_code">{{airport.iata_code}}</option>
+    </select>
+
+
+</div>
+

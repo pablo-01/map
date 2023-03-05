@@ -1,0 +1,12 @@
+.map {
+    width: 100%;
+    height: 600px;
+  }
+
+  /* padding on top and between buttons, buttons are in div */
+  .map-buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  
